@@ -42,10 +42,7 @@ const Footer = () => {
             <a className='social-icon-link' href='https://github.com/katwingki'>
               <AiFillGithub />
             </a>
-            <a
-              className='social-icon-link'
-              href='https://www.linkedin.com/in/kathrynlam/'
-            >
+            <a className='social-icon-link' href='mailto: katwingki@gmail.com'>
               <AiFillMail />
             </a>
             <a
