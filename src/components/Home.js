@@ -1,9 +1,13 @@
 import React from 'react';
+import AboutMe from './AboutMe';
 
 function Home() {
   return (
     <>
-      <h2>This is my home page</h2>
+      <div className='main-container'>
+        <h2>This is my home page</h2>
+        <AboutMe />
+      </div>
     </>
   );
 }
