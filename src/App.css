@@ -10,8 +10,8 @@
 }
 .content {
   flex: 1 0 auto;
-  background-color: blue;
-  padding: 10px;
+  background-color: #efdbfa;
+  padding: 0px;
 }
 
 .main-container {
