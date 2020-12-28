@@ -65,6 +65,16 @@ i {
   border-bottom: 10px solid #ae3de6;
   transition: all 0.2 ease-out;
 }
+.navbar-social-icon-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15rem 1rem;
+}
+.navbar-social-icon-link {
+  font-size: 30px;
+  color: white;
+}
 
 /* .fa-bars {
   color: white;

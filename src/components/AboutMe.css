@@ -1,5 +1,14 @@
-.main-container-about {
+#main-container-about {
   color: red;
-  background: linear-gradient(#e1f3f7, #89f7fe);
+  /* background: linear-gradient(#e1f3f7, #89f7fe); */
+  /* background: rgb(229, 221, 147); */
+  background: linear-gradient(
+    rgb(241, 241, 235),
+    rgb(247, 239, 170),
+    rgb(241, 241, 235)
+  );
   padding: 130px 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
 }
