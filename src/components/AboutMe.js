@@ -1,10 +1,10 @@
 import React from 'react';
 import './AboutMe.css';
-function AboutMe() {
+function AboutMe({ motto, about, keyValue }) {
   return (
     <>
       <div id='main-container-about'>
-        <h2>AboutMe</h2>
+        <h2>{keyValue}</h2>
       </div>
     </>
   );
