@@ -1,7 +1,7 @@
 .navbar {
   /* background: linear-gradient(#66a6ff, #e0b5f6, #89f7fe); */
   background: linear-gradient(#66a6ff, #e0b5f6, #89f7fe);
-  height: 120px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,8 +53,10 @@ i {
 }
 
 .nav-links {
-  color: rgb(241, 232, 232);
+  color: white;
+  text-shadow: 1px 2px rgb(95, 87, 87);
   display: flex;
+  font-weight: bold;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -68,12 +70,12 @@ i {
 .navbar-social-icon-wrap {
   display: flex;
   justify-content: space-between;
-
   padding: 15rem 1rem;
 }
 .navbar-social-icon-link {
-  font-size: 30px;
-  color: white;
+  font-size: 35px;
+
+  color: #981ad8;
 }
 
 /* .fa-bars {
