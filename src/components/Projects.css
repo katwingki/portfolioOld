@@ -1,13 +1,72 @@
+.project-section {
+  padding: 50px 80px 50px 120px;
+  background: linear-gradient(#89f7fe, #e1f3f7);
+}
+
 #main-container-projects {
   color: #529498;
   padding: 50px 50px;
   background: linear-gradient(#89f7fe, #e1f3f7);
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: flex;
 }
 
-h2 {
+.project-row {
+  display: flex;
+  background: rgb(245, 230, 233);
+  margin: 0 -15px -15px -15px;
+  flex-wrap: wrap;
+  align-items: center;
+  /* border-style: outset; */
+  border-radius: 15px;
+  /* border-width: 5px; */
+  border-color: rgb(234, 215, 236);
+}
+
+.project-column {
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.project-text-wrapper {
+  max-width: 540px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+}
+h1 {
+  color: navy;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 2px white;
+  padding-bottom: 15px;
+}
+h4 {
   color: #1b3132;
   text-shadow: 1px 2px white;
+  text-align: center;
+}
+h5 {
+  padding-top: 3px;
+  padding-bottom: 15px;
+}
+p {
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .project-section {
+    padding: 60px 10px 0px 50px;
+    text-align: left;
+  }
+  .project-column {
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -31,7 +31,7 @@ export const projects = [
     github: 'https://github.com/team-g-capstone',
     link: 'n/a',
     youtube: 'https://www.youtube.com/watch?v=J4UF711Ofc0',
-    Date: 'October 2020',
+    date: 'October 2020',
     descriptions: [
       'BrainTeez is an educational mobile application built within 2.5 weeks by a team of three developers, using Firebase, Firestore, React Native, Expo, JavaScript, and Redux. Our goal was to create a holistic learning application that provides a variety of leveled games and a real-time multiplayer game room that engage many parts of the child’s brain at once.',
       'Currently, there are three different leveled games. The first is a simple addition game that rendered with eye-catching pizazz. The second game strengthens logical skills and pattern-matching abilities by sorting a series of draggable circles into boxes by their color. The third game relies on the players’ memory to match pairs of cards with the same animal on them. All three games are progressively harder at each level, we believe the balance of shapes, numbers, colors, and sounds in these games will simulate new connections in the child’s brain. Finally, the real-time multiplayer game room allows the teacher to administer games as a test to evaluate the students’ performance. ',
