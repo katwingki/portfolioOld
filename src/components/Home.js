@@ -7,7 +7,11 @@ import Lottie from 'react-lottie';
 import linesPurpleBlue from '../lotties/lines_purple_blue.json';
 import lines from '../lotties/lines.json';
 import { motion } from 'framer-motion';
-
+import {
+  GiFamilyHouse,
+  GiCampCookingPot,
+  GiShoppingCart,
+} from 'react-icons/gi';
 function Home() {
   const defaultOptions = {
     loop: true,
@@ -24,7 +28,8 @@ function Home() {
       <div id='main-container'>
         <div className='intro-wrapper'>
           <motion.h2
-            animate={{ scale: [1, 2, 2, 1, 1], rotate: [0, 180, 180, 0] }}
+            // animate={{ scale: [1, 4, 3, 2, 1], rotate: [0, 180, 180, 0] }}
+            animate={{ scale: [1, 4, 3, 2, 1], rotate: 360 }}
             transition={{ ease: 'easeIn', duration: 0.6 }}
           >
             Hi there! I'm Kathryn, a full-stack developer.
@@ -48,12 +53,26 @@ function Home() {
           </div>
           <div className='center-wrapper'>
             <motion.h3
-              animate={{ scale: [1, 6, 2, 1, 1], rotate: 360 }}
+              animate={{ scale: [1, 2, 2, 2, 1] }}
               transition={{ delay: 0.6, duration: 0.6 }}
               className='center-subtitle'
             >
               When I am not coding...
             </motion.h3>
+            <div className='center-wrapper-div'>
+              <div>
+                <GiFamilyHouse size={50} />
+                <p>House Browsing</p>
+              </div>
+              <div>
+                <GiCampCookingPot size={50} />
+                <p>Cook Meals</p>
+              </div>
+              <div>
+                <GiShoppingCart size={50} />
+                <p>Lookup Deals</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

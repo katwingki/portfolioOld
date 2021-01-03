@@ -3,7 +3,6 @@
   padding: 60px 10px;
   /* background: linear-gradient(#89f7fe, #e1f3f7); */
   background: white;
-  height: 100vh;
   width: 100%;
   display: flex;
 }
@@ -29,18 +28,30 @@
   display: inline;
   text-align: center;
 }
+
+.center-wrapper-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 65px 205px 0px;
+}
+
 h2,
 h3 {
   color: rgb(5, 4, 4);
-  text-shadow: 1px 2px rgb(233, 216, 216);
+  text-shadow: 0.8px 0.5px #c276e7;
 }
 
 p {
   color: rgb(5, 5, 61);
   font-weight: bold;
+  margin-top: 3px;
 }
+
 @media screen and (max-width: 960px) {
   .intro-wrapper {
     padding: 5px 50px;
+  }
+  .center-wrapper-div {
+    margin: 25px 25px 0px;
   }
 }
