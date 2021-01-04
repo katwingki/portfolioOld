@@ -19,6 +19,15 @@
   width: 100%;
   display: flex;
 }
+.container {
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 
 .footer {
   flex-shrink: 0;
@@ -64,3 +73,10 @@
     transform: rotate(360deg);
   }
 } */
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

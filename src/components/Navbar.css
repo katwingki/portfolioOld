@@ -78,13 +78,10 @@ i {
   color: #981ad8;
 }
 
-/* .fa-bars {
+.fa-bars {
   color: white;
-} */
+}
 
-/* .nav-links-mobile {
-  display: none;
-} */
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -97,17 +94,19 @@ i {
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: 100%;
+    left: -100%;
     opacity: 1;
     transition: all 0.5 ease;
   }
+
   .nav-menu.active {
     background: linear-gradient(95deg, #02aab0, #c471ed);
     left: 0;
     opacity: 1;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     z-index: 1;
   }
+
   .nav-links {
     text-align: center;
     padding: 2 rem;

@@ -29,7 +29,7 @@ export const projects = [
   {
     title: 'BrainTeez',
     github: 'https://github.com/team-g-capstone',
-    link: 'n/a',
+    link: 'https://expo.io/@katwingki/projects/brainteez',
     youtube: 'https://www.youtube.com/watch?v=J4UF711Ofc0',
     date: 'October 2020',
     descriptions: [

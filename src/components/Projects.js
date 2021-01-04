@@ -1,6 +1,9 @@
 import React from 'react';
 import './Projects.css';
+import '../App.css';
 import { projects } from '../Data/data';
+import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
+import { TiSocialYoutubeCircular } from 'react-icons/ti';
 const Projects = () => {
   return (
     <div className='project-section'>
@@ -21,15 +24,33 @@ const Projects = () => {
             </div>
           </div>
           <div className='project-column'>
-            <h2>This is another project column</h2>
-            <iframe
-              src='https://player.cloudinary.com/embed/?cloud_name=demo&public_id=elephants&fluid=true&controls=true&source_types%5B0%5D=mp4'
-              width='440'
-              height='500'
-              allow='autoplay; fullscreen; encrypted-media; picture-in-picture'
-              allowfullscreen
-              frameborder='0'
-            ></iframe>
+            <div className='project-right-wrapper'>
+              <iframe
+                src='https://player.cloudinary.com/embed/?cloud_name=demo&public_id=elephants&fluid=true&controls=true&source_types%5B0%5D=mp4'
+                id='projectIframe'
+                allow='autoplay; fullscreen; encrypted-media; picture-in-picture'
+                allowfullscreen
+                frameborder='0'
+              ></iframe>
+
+              <div className='project-social-icon-wrap '>
+                <a className='project-social-icon-link' href={projects[0].link}>
+                  <AiOutlineLink />
+                </a>
+                <a
+                  className='project-social-icon-link'
+                  href='https://github.com/katwingki'
+                >
+                  <AiFillGithub />
+                </a>
+                <a
+                  className='project-social-icon-link'
+                  href='https://github.com/katwingki'
+                >
+                  <TiSocialYoutubeCircular />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
