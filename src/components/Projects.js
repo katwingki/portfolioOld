@@ -32,25 +32,25 @@ const Projects = () => {
                 allowfullscreen
                 frameborder='0'
               ></iframe>
-
-              <div className='project-social-icon-wrap '>
-                <a className='project-social-icon-link' href={projects[0].link}>
-                  <AiOutlineLink />
-                </a>
-                <a
-                  className='project-social-icon-link'
-                  href='https://github.com/katwingki'
-                >
-                  <AiFillGithub />
-                </a>
-                <a
-                  className='project-social-icon-link'
-                  href='https://github.com/katwingki'
-                >
-                  <TiSocialYoutubeCircular />
-                </a>
-              </div>
             </div>
+          </div>
+
+          <div className='project-social-icon-wrap '>
+            <a className='project-social-icon-link' href={projects[0].link}>
+              <AiOutlineLink />
+            </a>
+            <a
+              className='project-social-icon-link'
+              href='https://github.com/katwingki'
+            >
+              <AiFillGithub />
+            </a>
+            <a
+              className='project-social-icon-link'
+              href='https://github.com/katwingki'
+            >
+              <TiSocialYoutubeCircular />
+            </a>
           </div>
         </div>
       </div>

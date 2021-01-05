@@ -1,21 +1,23 @@
 .project-section {
-  padding: 50px 80px 50px 120px;
+  padding: 50px 80px 50px 80px;
   background: linear-gradient(#89f7fe, #e1f3f7);
 }
 
 #main-container-projects {
   color: #529498;
-  padding: 50px 80px;
+  padding: 50px 20px 20px 20px;
   background: linear-gradient(#89f7fe, #e1f3f7);
   /* height: 100vh; */
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-row {
   display: flex;
   background: rgb(231, 243, 250);
-  margin: 0 -15px -15px -15px;
+  /* margin: 0 -15px -15px -15px; */
   flex-wrap: wrap;
   align-items: center;
   /* border-style: outset; */
@@ -28,42 +30,59 @@
   margin-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  flex: 1;
+  /* flex: 1; */
   max-width: 50%;
   flex-basis: 50%;
 }
 
 .project-text-wrapper {
   max-width: 540px;
-  padding-top: 0px;
-  padding-bottom: 60px;
 }
 
 .project-right-wrapper {
   display: flex;
-  max-width: 555px;
-  padding: 35px 25px 15px 25px;
-}
+  justify-content: center;
+  align-items: center;
 
+  /* max-width: 560px; */
+  /* justify-content: center;
+  align-items: center; */
+  /* padding: 35px 25px 15px 25px; */
+}
+/* .iframe-div {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+} */
 #projectIframe {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 280px;
+  display: block;
+  margin: 0 auto;
+  padding-right: 15px;
 }
 .project-social-icon-wrap {
-  padding-top: 14rem;
+  padding-left: 15px;
+  padding-right: 25px;
 }
+
 .project-social-icon-link {
   font-size: 35px;
-  margin-left: -120%;
+  /* margin-left: -120%; */
 }
 
 h1 {
-  color: navy;
+  color: rgb(35, 35, 233);
   font-size: 30px;
+  font-family: 'Bungee Shade';
   text-align: center;
   text-shadow: 1px 2px white;
   padding-bottom: 15px;
+}
+h2 {
+  padding-top: 18px;
 }
 h4 {
   color: #1b3132;
@@ -75,7 +94,10 @@ h5 {
   padding-bottom: 15px;
 }
 p {
+  padding-left: 5px;
+  padding-right: 5px;
   padding-bottom: 10px;
+
   font-size: 12px;
 }
 @media screen and (max-width: 768px) {
@@ -90,16 +112,9 @@ p {
   .project-column {
     max-width: 100%;
     flex-basis: 100%;
-    display: flex;
-    justify-content: center;
   }
 
   .project-text-wrapper {
     padding-bottom: 65px;
-  }
-
-  .project-social-icon-wrap {
-    display: flex;
-    margin-left: 65px;
   }
 }
