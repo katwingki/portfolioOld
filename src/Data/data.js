@@ -29,7 +29,7 @@ export const projects = [
   {
     title: 'BrainTeez',
     iframelink:
-      'https://player.cloudinary.com/embed/?cloud_name=demo&public_id=elephants&fluid=true&controls=true&source_types%5B0%5D=mp4',
+      'https://res.cloudinary.com/dp8rfxspl/video/upload/v1610161958/Portfolio/BrainTeezNoAudioLow_hvthqx.mp4',
     github: 'https://github.com/team-g-capstone',
     link: 'https://expo.io/@katwingki/projects/brainteez',
     youtube: 'https://www.youtube.com/watch?v=J4UF711Ofc0',
@@ -58,6 +58,8 @@ export const projects = [
   },
   {
     title: 'HYKM Bookstore',
+    iframelink:
+      'https://res.cloudinary.com/dp8rfxspl/video/upload/v1610163695/Portfolio/BookSToreGraceShopper_low_qbstcu.mp4',
     github: 'https://github.com/HYKM/graceshopper',
     link: 'https://hykm-bookstore.herokuapp.com',
     youtube: 'https://www.youtube.com/watch?v=Xxc0v6FW38k',
