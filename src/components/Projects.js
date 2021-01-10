@@ -4,10 +4,10 @@ import '../App.css';
 import { projects } from '../Data/data';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 import { TiSocialYoutubeCircular } from 'react-icons/ti';
+
 const Projects = () => {
-  console.log('projects', projects);
   return (
-    <div className='project-section'>
+    <div id='project-section'>
       <h1>Projects</h1>
       <h4>
         Here is a list of projects built during the last 4 weeks of the program

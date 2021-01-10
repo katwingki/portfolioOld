@@ -20,15 +20,9 @@
 }
 
 .navbar-logo {
-  color: rgb(243, 240, 240);
-  justify-content: center;
-  text-decoration: none;
-  margin-left: 20px;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
+  height: 38px;
+  width: 38px;
+  margin-right: 8px;
 }
 
 .nav-menu {
@@ -70,12 +64,13 @@ i {
 .navbar-social-icon-wrap {
   display: flex;
   justify-content: space-between;
+  flex-direction: flex-bottom;
   padding: 15rem 1rem;
 }
 .navbar-social-icon-link {
   font-size: 35px;
-
-  color: #981ad8;
+  color: rgb(202, 143, 236);
+  /* color: #981ad8; */
 }
 
 .fa-bars {
@@ -123,12 +118,12 @@ i {
     border-radius: 10;
   }
 
-  .navbar-logo {
+  /* .navbar-logo {
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(15%, 50%);
-  }
+  } */
 
   .menu-icon {
     display: block;

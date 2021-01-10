@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logoGif from '../assets/logo2.gif';
+import connectGif from '../assets/connect2.gif';
 import {
   AiFillMail,
   AiFillLinkedin,
@@ -17,6 +19,9 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <div className='navbar-social-icon-wrap'>
+            <img src={logoGif} className='navbar-logo' />
+            <img src={connectGif} className='navbar-logo' />
+
             <a
               className='navbar-social-icon-link'
               href='https://www.linkedin.com/in/kathrynlam/'
@@ -25,21 +30,9 @@ function Navbar() {
             </a>
             <a
               className='navbar-social-icon-link'
-              href='https://github.com/katwingki'
-            >
-              <AiFillGithub />
-            </a>
-            <a
-              className='navbar-social-icon-link'
               href='mailto: katwingki@gmail.com'
             >
               <AiFillMail />
-            </a>
-            <a
-              className='navbar-social-icon-link'
-              href='https://medium.com/swlh/expo-firebase-authentication-cloud-firestore-using-async-await-react-hooks-700920ad4b2b'
-            >
-              <AiFillMediumSquare />
             </a>
           </div>
 
@@ -65,7 +58,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <a
-                href='#main-container-projects'
+                href='#project-section'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -75,7 +68,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/contact'
+                to='/projects'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
