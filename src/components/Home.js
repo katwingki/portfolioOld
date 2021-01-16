@@ -1,17 +1,18 @@
 import React from 'react';
 import './Home.css';
-import AboutMe from './AboutMe';
+
 import Projects from './Projects';
 import { aboutMe } from '../Data/data';
 import Lottie from 'react-lottie';
 import linesPurpleBlue from '../lotties/lines_purple_blue.json';
-import lines from '../lotties/lines.json';
 import { motion } from 'framer-motion';
 import {
   GiFamilyHouse,
   GiCampCookingPot,
   GiShoppingCart,
 } from 'react-icons/gi';
+import ContactForm from './ContactForm';
+
 function Home() {
   const defaultOptions = {
     loop: true,
@@ -77,8 +78,8 @@ function Home() {
         </div>
       </div>
 
-      {/* <AboutMe {...aboutMe} /> */}
       <Projects />
+      <ContactForm />
     </>
   );
 }
