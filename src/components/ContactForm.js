@@ -13,6 +13,7 @@ const ContactForm = () => {
     e.preventDefault();
     setLoading(true);
     if (!name) alert('Please enter your name');
+    else if (!email) alert('Please enter your email');
     else if (!message) alert('Please enter a message');
     else {
       try {
@@ -28,12 +29,13 @@ const ContactForm = () => {
         alert('Your message has been submitted');
         // Toastify({
         //   text: 'Your message has been submitted!',
+        //   duration: 3000,
         //   destination: 'https://github.com/apvarun/toastify-js',
         //   newWindow: true,
         //   close: true,
-        //   gravity: 'top',
-        //   position: 'center',
-        //   backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+        //   gravity: 'bottom',
+        //   positionLeft: false,
+        //   backgroundColor: 'linear-gradient(to right, #FFA69E, #861657)',
         //   stopOnFocus: true,
         // }).showToast();
       } catch (err) {
