@@ -83,7 +83,7 @@ const ContactForm = () => {
             </label>
             <button
               type='submit'
-              style={{ background: loading ? '#d3d3d3' : ' rgb(14, 14, 92)' }}
+              style={{ background: loading ? '#d3d3d3' : ' rgb(25, 25, 128)' }}
               onClick={handleSubmit}
             >
               Submit

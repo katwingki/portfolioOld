@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logoGif from '../assets/logo2.gif';
-import connectGif from '../assets/connect2.gif';
-import {
-  AiFillMail,
-  AiFillLinkedin,
-  AiFillMediumSquare,
-  AiFillGithub,
-} from 'react-icons/ai';
+import { AiFillMail, AiFillLinkedin } from 'react-icons/ai';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -17,12 +10,19 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
+        <div className='navbar-logo-section'>
+          <Link to='/' className='navbar-logo'>
+            <i className='fas fa-home' />
+            Home
+          </Link>
+        </div>
+
         <div className='navbar-container'>
           <div className='navbar-social-icon-wrap'>
-            {/* <img src={logoGif} className='navbar-logo' />
-            <img src={connectGif} className='navbar-logo' /> */}
-            Connect with me ==>
-            <a
+            {/* <Link to='/' className='logo-link'>
+              <h3 className='logo-text'>Kathryn Lam</h3>
+            </Link> */}
+            {/* <a
               className='navbar-social-icon-link'
               href='https://www.linkedin.com/in/kathrynlam/'
             >
@@ -33,13 +33,8 @@ function Navbar() {
               href='mailto: katwingki@gmail.com'
             >
               <AiFillMail />
-            </a>
+            </a> */}
           </div>
-
-          {/* <Link to='/' className='navbar-logo'>
-            <i className='fas fa-home' />
-            Home
-          </Link> */}
 
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
 .navbar {
   /* background: linear-gradient(#66a6ff, #e0b5f6, #89f7fe); */
   background: linear-gradient(#66a6ff, #e0b5f6, #89f7fe);
   height: 150px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 15px 45px 15px;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
 }
+.navbar-logo-section {
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(238, 142, 241);
+}
 
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+}
 .navbar-container {
   display: flex;
   justify-content: center;
@@ -23,6 +40,7 @@
   height: 38px;
   width: 38px;
   margin-right: 8px;
+  text-decoration: none;
 }
 
 .nav-menu {
@@ -48,7 +66,7 @@ i {
 
 .nav-links {
   color: white;
-  text-shadow: 1px 2px rgb(95, 87, 87);
+  text-shadow: 1px 1.5px rgb(95, 87, 87);
   display: flex;
   font-weight: bold;
   align-items: center;
@@ -58,15 +76,17 @@ i {
 }
 
 .nav-links:hover {
-  border-bottom: 10px solid #ae3de6;
+  border-bottom: 8px solid #b7f593;
   transition: all 0.2 ease-out;
 }
+
 .navbar-social-icon-wrap {
   display: flex;
   justify-content: space-between;
   flex-direction: flex-bottom;
   padding: 15rem 1rem;
 }
+
 .navbar-social-icon-link {
   font-size: 35px;
   color: rgb(202, 143, 236);
@@ -78,10 +98,16 @@ i {
 }
 
 @media screen and (max-width: 960px) {
-  .NavbarItems {
+  /* .NavbarItems {
     position: relative;
-  }
+  } */
 
+  .navbar {
+    padding: 5px 20px 5px;
+  }
+  .navbar-logo-section {
+    margin-bottom: 40px;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -96,6 +122,7 @@ i {
 
   .nav-menu.active {
     background: linear-gradient(95deg, #02aab0, #c471ed);
+    padding: 65px 25px 15px;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -111,9 +138,11 @@ i {
   }
 
   .nav-links:hover {
-    background-color: #d294f1;
+    background-color: #f0e1f8;
+    opacity: 0.8;
     padding: 1.5rem 0 0 0;
-    color: #480d66;
+    color: #450764;
+    text-shadow: 1px 2px rgb(243, 241, 241);
     font-weight: bold;
     border-radius: 10;
   }
