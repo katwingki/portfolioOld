@@ -12,8 +12,11 @@ import {
   GiShoppingCart,
 } from 'react-icons/gi';
 import ContactForm from './ContactForm';
+import Confetti from 'react-confetti';
 
 function Home() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -27,6 +30,7 @@ function Home() {
   return (
     <>
       <div id='main-container'>
+        <Confetti width={width} height={height} recycle={false} />
         <div className='intro-wrapper'>
           <motion.h2
             // animate={{ scale: [1, 4, 3, 2, 1], rotate: [0, 180, 180, 0] }}

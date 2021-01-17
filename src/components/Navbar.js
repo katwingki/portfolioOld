@@ -67,14 +67,14 @@ function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/projects'
+              <a
+                href='#form-section'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 <i className='far fa-address-book' />
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

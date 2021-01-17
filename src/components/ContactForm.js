@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ContactForm.css';
-import Confetti from 'react-confetti';
-import { ToastContainer, toast } from 'react-toastify';
+import Toastify from 'toastify-js';
 import { db } from './firebase';
 
 const ContactForm = () => {
@@ -9,32 +8,43 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  const width = window.innerWidth;
-  const height = window.innerHeight;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
-    try {
-      db.collection('contactforms').add({
-        name: name,
-        email: email,
-        message: message,
-      });
-      setName('');
-      setEmail('');
-      setMessage('');
-      alert('Your message has been submitted! ');
-    } catch (err) {
-      alert(err.message);
-      setLoading(false);
+    if (!name) alert('Please enter your name');
+    else if (!message) alert('Please enter a message');
+    else {
+      try {
+        await db.collection('contactforms').add({
+          name: name,
+          email: email,
+          message: message,
+        });
+        setName('');
+        setEmail('');
+        setMessage('');
+        setLoading(false);
+        alert('Your message has been submitted');
+        // Toastify({
+        //   text: 'Your message has been submitted!',
+        //   destination: 'https://github.com/apvarun/toastify-js',
+        //   newWindow: true,
+        //   close: true,
+        //   gravity: 'top',
+        //   position: 'center',
+        //   backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+        //   stopOnFocus: true,
+        // }).showToast();
+      } catch (err) {
+        alert(err.message);
+        setLoading(false);
+      }
     }
   };
   return (
     <>
       <div id='form-section'>
-        <Confetti width={width} height={height} recycle={false} />
         <h3>Send me a message: </h3>
         <div id='main-container-form'>
           <form className='contactform'>
@@ -71,7 +81,7 @@ const ContactForm = () => {
             </label>
             <button
               type='submit'
-              style={{ background: loading ? '#CCCCD9' : ' rgb(2, 2, 110)' }}
+              style={{ background: loading ? '#d3d3d3' : ' rgb(14, 14, 92)' }}
               onClick={handleSubmit}
             >
               Submit
