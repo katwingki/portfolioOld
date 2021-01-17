@@ -32,6 +32,7 @@ function Home() {
             // animate={{ scale: [1, 4, 3, 2, 1], rotate: [0, 180, 180, 0] }}
             animate={{ scale: [1, 4, 3, 2, 1], rotate: 360 }}
             transition={{ ease: 'easeIn', duration: 0.6 }}
+            className='title'
           >
             Hi there! I'm Kathryn, a full-stack developer.
           </motion.h2>
@@ -56,7 +57,7 @@ function Home() {
             <motion.h3
               animate={{ scale: [1, 2, 2, 2, 1] }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className='center-subtitle'
+              className='subtitle'
             >
               When I am not coding...
             </motion.h3>

@@ -9,6 +9,7 @@ import {
 import './Footer.css';
 const Footer = () => {
   const [click, setClick] = useState(false);
+
   return (
     <>
       <div className='footer-container'>
@@ -26,8 +27,7 @@ const Footer = () => {
           </div>
 
           <small className='website-rights'>
-            {' '}
-            © 2020 Kathryn Lam. All rights reserved.{' '}
+            © 2020 Kathryn Lam. All rights reserved.
           </small>
 
           <div className='footer-social-icon-wrap'>

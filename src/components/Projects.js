@@ -32,7 +32,7 @@ const Projects = () => {
                   src={project.iframelink}
                   id='projectIframe'
                   allow='autoplay; fullscreen; encrypted-media; picture-in-picture'
-                  allowfullscreen
+                  allowFullScreen
                   frameborder='0'
                 ></iframe>
               </div>

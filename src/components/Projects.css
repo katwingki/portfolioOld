@@ -76,7 +76,7 @@
 
 h1 {
   color: rgb(14, 14, 92);
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Bungee Shade';
   text-align: center;
   text-shadow: 1px 2px white;
@@ -89,6 +89,8 @@ h4 {
   color: #1b3132;
   text-shadow: 1px 2px white;
   text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h5 {
   padding-top: 3px;
