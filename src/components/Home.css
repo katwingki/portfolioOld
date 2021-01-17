@@ -58,7 +58,17 @@ p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.resume-section {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.resume-button {
+  text-align: center;
+  width: 240px;
+  background-color: #a92fe6;
+  padding: 5px 5px 5px 5px;
+}
 @media screen and (max-width: 960px) {
   #main-container {
     padding: 25px 10px 10px 25px;

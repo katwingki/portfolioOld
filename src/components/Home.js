@@ -13,6 +13,7 @@ import {
 } from 'react-icons/gi';
 import ContactForm from './ContactForm';
 import Confetti from 'react-confetti';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const width = window.innerWidth;
@@ -27,10 +28,20 @@ function Home() {
     },
   };
 
+  const handleClick = () => {
+    return (
+      <iframe
+        src='https://docs.google.com/document/d/1ODAmBf55PmVSlXAJr8kEnxrHAtQOEGZiV0-Fk8OUmeA/export?format=pdf&embedded=true'
+        width='100%'
+        height='250px'
+      ></iframe>
+    );
+  };
   return (
     <>
       <div id='main-container'>
         <Confetti width={width} height={height} recycle={false} />
+
         <div className='intro-wrapper'>
           <motion.h2
             // animate={{ scale: [1, 4, 3, 2, 1], rotate: [0, 180, 180, 0] }}
@@ -52,6 +63,11 @@ function Home() {
           </div>
           <div className='intro-text'>
             <p>{aboutMe.keyValue}</p>
+          </div>
+          <div className='resume-section'>
+            <a href='https://docs.google.com/document/d/1ODAmBf55PmVSlXAJr8kEnxrHAtQOEGZiV0-Fk8OUmeA/export?format=pdf&embedded=true'>
+              <button className='resume-button'> Download Resume</button>
+            </a>
           </div>
 
           <div className='lottie-wrapper'>
