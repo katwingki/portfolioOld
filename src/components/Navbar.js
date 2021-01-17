@@ -19,9 +19,9 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <div className='navbar-social-icon-wrap'>
-            <img src={logoGif} className='navbar-logo' />
-            <img src={connectGif} className='navbar-logo' />
-
+            {/* <img src={logoGif} className='navbar-logo' />
+            <img src={connectGif} className='navbar-logo' /> */}
+            Connect with me ==>
             <a
               className='navbar-social-icon-link'
               href='https://www.linkedin.com/in/kathrynlam/'

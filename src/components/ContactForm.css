@@ -62,3 +62,12 @@ button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+@media screen and (max-width: 968px) {
+  #form-section {
+    padding: 15px 10px 10px 15px;
+  }
+  #main-container-form {
+    padding: 25px 10px 10px 5px;
+  }
+}

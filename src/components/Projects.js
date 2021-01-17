@@ -21,9 +21,9 @@ const Projects = () => {
               <div className='project-text-wrapper'>
                 <h2>{project.title}</h2>
                 <h5>Fullstack Developer | {project.date} </h5>
-                <p>{project.descriptions[0]}</p>
-                <p>{project.descriptions[1]}</p>
-                <p>{project.descriptions[2]}</p>
+                {project.descriptions.map((des) => (
+                  <p>{des}</p>
+                ))}
               </div>
             </div>
             <div className='project-column'>

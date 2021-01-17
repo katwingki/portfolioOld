@@ -101,13 +101,14 @@ p {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 10px;
+  letter-spacing: 1px;
 
   font-size: 12px;
 }
 @media screen and (max-width: 968px) {
-  .project-section {
-    padding: 60px 0px 0px 10px;
-    text-align: left;
+  #project-section {
+    padding: 15px 10px 10px 15px;
+    text-align: center;
   }
   .project-row {
     max-width: 100%;
@@ -119,6 +120,6 @@ p {
   }
 
   .project-text-wrapper {
-    padding-bottom: 65px;
+    padding-bottom: 0px;
   }
 }
