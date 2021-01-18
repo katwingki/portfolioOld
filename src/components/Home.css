@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+#main-container {
+  color: #529498;
+  padding: 60px 10px;
+  /* background: linear-gradient(#89f7fe, #e1f3f7); */
+  background: white;
+  width: 100%;
+  display: flex;
+}
+
+.intro-wrapper {
+  padding: 1px 150px;
+  text-align: left;
+}
+
+.intro-text {
+  padding-top: 10px;
+}
+
+.lottie-wrapper {
+  display: flex;
+  direction: flex-start;
+}
+.lottie-animation {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.center-wrapper {
+  display: inline;
+  text-align: center;
+}
+
+.center-wrapper-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 65px 205px 0px;
+}
+
+.title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 35px;
+  color: #0e5a5f;
+  text-shadow: 0.8px 0.5px #88ced3;
+}
+
+.subtitle {
+  color: #103c3f;
+  font-size: 30px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-shadow: 0.8px 0.5px #88ced3;
+}
+
+p {
+  color: rgb(5, 5, 61);
+  font-weight: bold;
+  margin-top: 3px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.resume-section {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.resume-button {
+  text-align: center;
+  width: 240px;
+  background-color: #a92fe6;
+  padding: 5px 5px 5px 5px;
+}
+@media screen and (max-width: 960px) {
+  #main-container {
+    padding: 25px 10px 10px 25px;
+  }
+  .intro-wrapper {
+    padding: 5px 10px 5px;
+  }
+  .center-wrapper-div {
+    margin: 25px 25px 0px;
+  }
+}
