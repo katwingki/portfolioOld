@@ -63,7 +63,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <a
-                href='#form-section'
+                href='#contact-block'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >

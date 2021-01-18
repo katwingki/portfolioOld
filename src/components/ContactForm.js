@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './ContactForm.css';
 import Toastify from 'toastify-js';
 import { db } from './firebase';
+import ScrollableAnchor, {
+  configureAnchors,
+  removeHash,
+} from 'react-scrollable-anchor';
+configureAnchors({ offset: -160, scrollDuration: 200 });
+removeHash();
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -45,7 +51,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <>
+    <ScrollableAnchor id={'contact-block'}>
       <div id='form-section'>
         <h3>Send me a message: </h3>
         <div id='main-container-form'>
@@ -83,7 +89,9 @@ const ContactForm = () => {
             </label>
             <button
               type='submit'
-              style={{ background: loading ? '#d3d3d3' : ' rgb(25, 25, 128)' }}
+              style={{
+                background: loading ? '#d3d3d3' : ' rgb(25, 25, 128)',
+              }}
               onClick={handleSubmit}
             >
               Submit
@@ -91,7 +99,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-    </>
+    </ScrollableAnchor>
   );
 };
 

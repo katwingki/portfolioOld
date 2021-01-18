@@ -8,12 +8,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <Router>
-        {/* <ScrollToTop /> */}
-        <Navbar />
-        <Routers />
-        <Footer />
-      </Router>
+      <Routers />
     </>
   );
 }
