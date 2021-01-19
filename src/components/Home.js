@@ -39,7 +39,7 @@ function Home() {
   };
   return (
     <>
-      <div id='main-container'>
+      <div id='main-container-about'>
         <Confetti width={width} height={height} recycle={false} />
 
         <div className='intro-wrapper'>

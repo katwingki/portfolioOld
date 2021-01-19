@@ -19,8 +19,10 @@
 .footer-pagelinks-items {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 300px;
+  /* margin-right: 35px; */
+
   /* justify-content: space-between; */
   /* flex-direction: row;
   justify-content: center;

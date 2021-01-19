@@ -15,12 +15,10 @@ function Routers() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' component={Home} />
-
-        <Route exact path='/contactForm' component={ContactForm} />
-
+        <Route exact path='/contactform' component={ContactForm} />
         <Route exact path='/projects' component={Projects} />
-        <Route path='/resume' component={Resume} />
+        <Route exact path='/resume' component={Resume} />
+        <Route path='/' component={Home} />
       </Switch>
       <Footer />
     </Router>
