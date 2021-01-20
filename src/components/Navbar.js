@@ -18,24 +18,6 @@ function Navbar() {
         </div>
 
         <div className='navbar-container'>
-          <div className='navbar-social-icon-wrap'>
-            {/* <Link to='/' className='logo-link'>
-              <h3 className='logo-text'>Kathryn Lam</h3>
-            </Link> */}
-            {/* <a
-              className='navbar-social-icon-link'
-              href='https://www.linkedin.com/in/kathrynlam/'
-            >
-              <AiFillLinkedin />
-            </a>
-            <a
-              className='navbar-social-icon-link'
-              href='mailto: katwingki@gmail.com'
-            >
-              <AiFillMail />
-            </a> */}
-          </div>
-
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -53,12 +35,18 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <a
-                href='#project-section'
+                href={'#project-section' || '/projects'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 <i className='fas fa-tasks' />
                 Projects
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a href='/resume' className='nav-links' onClick={closeMobileMenu}>
+                <i className='fas fa-tasks' />
+                Resume
               </a>
             </li>
             <li className='nav-item'>

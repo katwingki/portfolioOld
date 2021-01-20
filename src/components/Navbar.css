@@ -25,7 +25,7 @@
 
 .logo-text {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
 }
 .navbar-container {
@@ -37,15 +37,15 @@
 }
 
 .navbar-logo {
-  height: 38px;
-  width: 38px;
+  height: 18px;
+  width: 18px;
   margin-right: 8px;
   text-decoration: none;
 }
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -88,7 +88,7 @@ i {
 }
 
 .navbar-social-icon-link {
-  font-size: 35px;
+  font-size: 15px;
   color: rgb(202, 143, 236);
   /* color: #981ad8; */
 }

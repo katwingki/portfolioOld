@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Resume.css';
 
 const Resume = () => {
+  const googleDocPdf =
+    'https://docs.google.com/document/d/1Q1K278U0x2qmM7ih0CQtP2ei15n_GmlHhU6RbfI6A7w/export?format=pdf&embedded=true';
+
+  const googleDoc =
+    'https://docs.google.com/document/d/1Q1K278U0x2qmM7ih0CQtP2ei15n_GmlHhU6RbfI6A7w/edit?usp=sharing';
+
   return (
-    <div>
-      <h1>resume</h1>
-      <iframe src='https://docs.google.com/document/d/1ODAmBf55PmVSlXAJr8kEnxrHAtQOEGZiV0-Fk8OUmeA/edit&embedded=true'></iframe>
+    <div id='resume-section'>
+      <div className='resume-top-button'>
+        <a href={googleDocPdf}>
+          <button className='resume-button'> Download Resume</button>
+        </a>
+      </div>
+      <iframe
+        src='https://docs.google.com/document/d/1Q1K278U0x2qmM7ih0CQtP2ei15n_GmlHhU6RbfI6A7w/edit?usp=sharing&embedded=true'
+        width={'950px'}
+        height={'1200px'}
+      ></iframe>
     </div>
   );
 };
 
 export default Resume;
+
+{
+  /* <a href={googleDoc} target='_blank' onClick={window.open(googleDoc)}>
+          Click
+        </a> */
+}
