@@ -14,3 +14,14 @@
 .resume-top-button {
   padding-bottom: 15px;
 }
+
+.resume-iframe {
+  width: 950px;
+  height: 1200px;
+}
+@media screen and (max-width: 960px) {
+  .resume-iframe {
+    width: 450px;
+    height: 600px;
+  }
+}

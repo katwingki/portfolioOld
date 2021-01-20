@@ -15,10 +15,10 @@ const Resume = () => {
           <button className='resume-button'> Download Resume</button>
         </a>
       </div>
+
       <iframe
         src='https://docs.google.com/document/d/1Q1K278U0x2qmM7ih0CQtP2ei15n_GmlHhU6RbfI6A7w/edit?usp=sharing&embedded=true'
-        width={'950px'}
-        height={'1200px'}
+        className='resume-iframe'
       ></iframe>
     </div>
   );
