@@ -7,13 +7,20 @@ import Resume from './Resume';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import ScrollableAnchor, {
+  configureAnchors,
+  goToTop,
+  removeHash,
+} from 'react-scrollable-anchor';
 configureAnchors({ offset: -160, scrollDuration: 200 });
+goToTop();
+removeHash();
 
 function Routers() {
   return (
     <Router>
       <Navbar />
+
       <Switch>
         <Route exact path='/contactform' component={ContactForm} />
         <Route exact path='/projects' component={Projects} />

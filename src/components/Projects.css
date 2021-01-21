@@ -21,6 +21,7 @@
   /* margin: 0 -15px -15px -15px; */
   flex-wrap: wrap;
   align-items: center;
+
   /* border-style: outset; */
   /* border-radius: 15px;
   /* border-width: 5px; */
@@ -102,7 +103,6 @@ p {
   padding-right: 5px;
   padding-bottom: 10px;
   letter-spacing: 1px;
-
   font-size: 12px;
 }
 @media screen and (max-width: 968px) {
