@@ -6,25 +6,24 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Navbar from './Navbar';
 import Footer from './Footer';
-
+import ScrollToTop from './ScrollToTop';
 import ScrollableAnchor, {
   configureAnchors,
   goToTop,
-  removeHash,
 } from 'react-scrollable-anchor';
-configureAnchors({ offset: -160, scrollDuration: 200 });
+configureAnchors({ offset: -150, scrollDuration: 200 });
 goToTop();
-removeHash();
 
 function Routers() {
   return (
     <Router>
       <Navbar />
-
+      <ScrollToTop />
       <Switch>
         <Route exact path='/contactform' component={ContactForm} />
         <Route exact path='/projects' component={Projects} />
         <Route exact path='/resume' component={Resume} />
+        <Route path='/portfolio' component={Home} />
         <Route path='/' component={Home} />
       </Switch>
       <Footer />

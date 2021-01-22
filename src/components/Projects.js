@@ -4,12 +4,8 @@ import '../App.css';
 import { projects } from '../Data/data';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 import { TiSocialYoutubeCircular } from 'react-icons/ti';
-import ScrollableAnchor, {
-  configureAnchors,
-  removeHash,
-} from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 configureAnchors({ offset: -160, scrollDuration: 200 });
-removeHash();
 
 const Projects = () => {
   return (

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 
 .navbar {
-  /* background: linear-gradient(#66a6ff, #e0b5f6, #89f7fe); */
   background: linear-gradient(#66a6ff, #e0b5f6, #89f7fe);
   height: 150px;
   display: flex;
@@ -13,6 +12,7 @@
   top: 0;
   z-index: 999;
 }
+
 .navbar-logo-section {
   font-size: 25px;
   font-weight: bold;
@@ -146,13 +146,6 @@ i {
     font-weight: bold;
     border-radius: 10;
   }
-
-  /* .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(15%, 50%);
-  } */
 
   .menu-icon {
     display: block;

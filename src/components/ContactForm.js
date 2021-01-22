@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './ContactForm.css';
-import Toastify from 'toastify-js';
 import { db } from './firebase';
-import ScrollableAnchor, {
-  configureAnchors,
-  removeHash,
-} from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 configureAnchors({ offset: -160, scrollDuration: 200 });
-removeHash();
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -33,17 +28,6 @@ const ContactForm = () => {
         setMessage('');
         setLoading(false);
         alert('Your message has been submitted');
-        // Toastify({
-        //   text: 'Your message has been submitted!',
-        //   duration: 3000,
-        //   destination: 'https://github.com/apvarun/toastify-js',
-        //   newWindow: true,
-        //   close: true,
-        //   gravity: 'bottom',
-        //   positionLeft: false,
-        //   backgroundColor: 'linear-gradient(to right, #FFA69E, #861657)',
-        //   stopOnFocus: true,
-        // }).showToast();
       } catch (err) {
         alert(err.message);
         setLoading(false);

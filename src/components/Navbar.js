@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { AiFillMail, AiFillLinkedin } from 'react-icons/ai';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -25,7 +24,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <a
-                href='/#main-container-about'
+                href='/portfolio/#main-container-about'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -35,7 +34,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <a
-                href={'/#project-section'}
+                href={'/portfolio/#project-section'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -44,18 +43,25 @@ function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <a
-                href={'/resume'}
+              {/* <a
+                href={'/portfolio/resume'}
+                className='nav-links'
+                onClick={closeMobileMenu}
+              > */}
+              <Link
+                to='/resume'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                <i className='fas fa-tasks' />
+                <i class='fas fa-file-invoice' />
                 Resume
-              </a>
+              </Link>
+
+              {/* </a> */}
             </li>
             <li className='nav-item'>
               <a
-                href='/#contact-block'
+                href='/portfolio#contact-block'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
