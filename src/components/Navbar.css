@@ -65,8 +65,8 @@ i {
 }
 
 .nav-links {
-  color: white;
-  text-shadow: 1px 1.5px rgb(95, 87, 87);
+  color: rgb(70, 5, 70);
+  text-shadow: 1px 1px rgb(238, 142, 241);
   display: flex;
   font-weight: bold;
   align-items: center;

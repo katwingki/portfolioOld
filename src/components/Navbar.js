@@ -43,11 +43,6 @@ function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              {/* <a
-                href={'/portfolio/resume'}
-                className='nav-links'
-                onClick={closeMobileMenu}
-              > */}
               <Link
                 to='/resume'
                 className='nav-links'
@@ -56,8 +51,6 @@ function Navbar() {
                 <i class='fas fa-file-invoice' />
                 Resume
               </Link>
-
-              {/* </a> */}
             </li>
             <li className='nav-item'>
               <a

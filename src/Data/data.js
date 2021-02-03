@@ -29,7 +29,7 @@ export const projects = [
   {
     title: 'BrainTeez',
     iframelink:
-      'https://res.cloudinary.com/dp8rfxspl/video/upload/v1610161958/Portfolio/BrainTeezNoAudioLow_hvthqx.mp4',
+      'https://www.youtube.com/embed/PO03Om8jUBo?&autoplay=1"frameborder="0"allowfullscreen',
     github: 'https://github.com/team-g-capstone',
     link: 'https://expo.io/@katwingki/projects/brainteez',
     youtube: 'https://www.youtube.com/watch?v=J4UF711Ofc0',
@@ -47,7 +47,7 @@ export const projects = [
   {
     title: 'Minions AI',
     iframelink:
-      'https://res.cloudinary.com/dp8rfxspl/video/upload/ac_none,br_2303kk,ki_1,q_auto:best,vc_auto/ac_none,e_accelerate:100,ki_4/v1609658529/Portfolio/MinionsAI_CompletedWithAudio_pn4qcn.mp4',
+      'https://www.youtube.com/embed/kusE5jgcYj8?&autoplay=1"frameborder="0"allowfullscreen',
     github: 'https://github.com/katwingki/Stackathon',
     link:
       'https://res.cloudinary.com/dp8rfxspl/video/upload/v1609658529/Portfolio/MinionsAI_CompletedWithAudio_pn4qcn.mp4',
@@ -67,7 +67,7 @@ export const projects = [
   {
     title: 'HYKM Bookstore',
     iframelink:
-      'https://res.cloudinary.com/dp8rfxspl/video/upload/v1610163695/Portfolio/BookSToreGraceShopper_low_qbstcu.mp4',
+      'https://www.youtube.com/embed/iyGDtenQF_A?&autoplay=1"frameborder="0"allowfullscreen',
     github: 'https://github.com/HYKM/graceshopper',
     link: 'https://hykm-bookstore.herokuapp.com',
     youtube: 'https://www.youtube.com/watch?v=Xxc0v6FW38k',

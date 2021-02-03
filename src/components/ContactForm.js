@@ -80,6 +80,7 @@ const ContactForm = () => {
             >
               Submit
             </button>
+            <p className='website-rights'>Powered by Firebase</p>
           </form>
         </div>
       </div>
