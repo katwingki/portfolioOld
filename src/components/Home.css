@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
 
-#main-container {
+#main-container-about {
   color: #529498;
   /* padding: 60px 10px; */
   /* background: linear-gradient(#89f7fe, #e1f3f7); */
-  background: white;
-  height: 100vh;
+  background: rgb(247, 236, 236);
   width: 100%;
   display: flex;
 }
@@ -78,13 +77,17 @@ p {
   padding: 5px 5px 5px 5px;
 }
 @media screen and (max-width: 600px) {
-  #main-container {
-    padding: 25px 10px 10px 25px;
+  #main-container-about {
+    padding: 55px 10px 10px 25px;
   }
   .intro-wrapper {
     padding: 5px 10px 5px;
   }
   .intro-text {
+    padding: 10px 50px 0px;
+    text-align: center;
+  }
+  .intro-skills {
     padding: 10px 50px 0px;
     text-align: center;
   }
