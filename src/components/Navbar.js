@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { AiFillMail, AiFillLinkedin } from 'react-icons/ai';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -18,24 +17,6 @@ function Navbar() {
         </div>
 
         <div className='navbar-container'>
-          <div className='navbar-social-icon-wrap'>
-            {/* <Link to='/' className='logo-link'>
-              <h3 className='logo-text'>Kathryn Lam</h3>
-            </Link> */}
-            {/* <a
-              className='navbar-social-icon-link'
-              href='https://www.linkedin.com/in/kathrynlam/'
-            >
-              <AiFillLinkedin />
-            </a>
-            <a
-              className='navbar-social-icon-link'
-              href='mailto: katwingki@gmail.com'
-            >
-              <AiFillMail />
-            </a> */}
-          </div>
-
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -43,7 +24,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <a
-                href='#main-container-about'
+                href='/portfolio/#main-container-about'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -53,7 +34,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <a
-                href='#project-section'
+                href={'/portfolio/#project-section'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -62,8 +43,18 @@ function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
+              <Link
+                to='/resume'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                <i class='fas fa-file-invoice' />
+                Resume
+              </Link>
+            </li>
+            <li className='nav-item'>
               <a
-                href='#form-section'
+                href='/portfolio#contact-block'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >

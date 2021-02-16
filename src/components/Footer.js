@@ -18,11 +18,14 @@ const Footer = () => {
             <Link to='/' className='footer-links'>
               Home
             </Link>
-            <Link to='/aboutme' className='footer-links'>
-              About Me
-            </Link>
             <Link to='/projects' className='footer-links'>
               Projects
+            </Link>
+            <Link to='/resume' className='footer-links'>
+              Resume
+            </Link>
+            <Link to='/contactform' className='footer-links'>
+              Contact
             </Link>
           </div>
 

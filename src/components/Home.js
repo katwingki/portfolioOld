@@ -1,22 +1,17 @@
 import React from 'react';
 import './Home.css';
-
 import Projects from './Projects';
 import { aboutMe } from '../Data/data';
 import Lottie from 'react-lottie';
 import linesPurpleBlue from '../lotties/lines_purple_blue.json';
 import { motion } from 'framer-motion';
-import {
-  GiFamilyHouse,
-  GiCampCookingPot,
-  GiShoppingCart,
-} from 'react-icons/gi';
+import { GiFamilyHouse, GiCampCookingPot } from 'react-icons/gi';
+import { HiShoppingCart } from 'react-icons/hi';
 import ContactForm from './ContactForm';
 import Confetti from 'react-confetti';
-import { Link } from 'react-router-dom';
 
 function Home() {
-  const width = window.innerWidth;
+  const width = window.innerWidth - 30;
   const height = window.innerHeight;
   const defaultOptions = {
     loop: true,
@@ -28,23 +23,12 @@ function Home() {
     },
   };
 
-  const handleClick = () => {
-    return (
-      <iframe
-        src='https://docs.google.com/document/d/1ODAmBf55PmVSlXAJr8kEnxrHAtQOEGZiV0-Fk8OUmeA/export?format=pdf&embedded=true'
-        width='100%'
-        height='250px'
-      ></iframe>
-    );
-  };
   return (
     <>
-      <div id='main-container'>
+      <div id='main-container-about'>
         <Confetti width={width} height={height} recycle={false} />
-
         <div className='intro-wrapper'>
           <motion.h2
-            // animate={{ scale: [1, 4, 3, 2, 1], rotate: [0, 180, 180, 0] }}
             animate={{ scale: [1, 4, 3, 2, 1], rotate: 360 }}
             transition={{ ease: 'easeIn', duration: 0.6 }}
             className='title'
@@ -61,12 +45,26 @@ function Home() {
           <div className='intro-text'>
             <p>{aboutMe.aboutThree}</p>
           </div>
-          <div className='intro-text'>
-            <p>{aboutMe.keyValue}</p>
+
+          <div className='intro-skills'>
+            <h4 className='subtitle'>Technical Skills</h4>
+            <div>
+              <p>
+                Proficient: JavaScript, Node.js, Express.js, REST API, Git,
+                React, Redux.js, React Native, Expo, HTML, CSS, JQuery,
+                Sequelize.js, OAuth, PostgreSQL, Agile Software Development
+              </p>
+            </div>
+            <div>
+              <p>
+                Knowledgeable: Mocha, Chai, Jasmine, Heroku, Firebase, Cloud
+                Firestore
+              </p>
+            </div>
           </div>
           <div className='resume-section'>
             <a href='https://docs.google.com/document/d/1ODAmBf55PmVSlXAJr8kEnxrHAtQOEGZiV0-Fk8OUmeA/export?format=pdf&embedded=true'>
-              <button className='resume-button'> Download Resume</button>
+              <button className='resume-button'>Download Resume</button>
             </a>
           </div>
 
@@ -83,15 +81,15 @@ function Home() {
             </motion.h3>
             <div className='center-wrapper-div'>
               <div>
-                <GiFamilyHouse size={50} />
+                <GiFamilyHouse size={50} color={'#068b94'} />
                 <p>House Browsing</p>
               </div>
               <div>
-                <GiCampCookingPot size={50} />
+                <GiCampCookingPot size={50} color={'#068b94'} />
                 <p>Cook Meals</p>
               </div>
               <div>
-                <GiShoppingCart size={50} />
+                <HiShoppingCart size={50} color={'#068b94'} />
                 <p>Lookup Deals</p>
               </div>
             </div>

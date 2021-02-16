@@ -2,22 +2,28 @@
 
 #main-container {
   color: #529498;
-  padding: 60px 10px;
+  /* padding: 60px 10px; */
   /* background: linear-gradient(#89f7fe, #e1f3f7); */
   background: white;
+  height: 100vh;
   width: 100%;
   display: flex;
 }
 
 .intro-wrapper {
-  padding: 1px 150px;
-  text-align: left;
+  padding: 55px 50px;
 }
 
 .intro-text {
-  padding-top: 10px;
+  padding: 10px 150px 0px;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 20px;
 }
-
+.intro-skills {
+  padding: 15px 150px 0px;
+  line-height: 1.5;
+}
 .lottie-wrapper {
   display: flex;
   direction: flex-start;
@@ -34,7 +40,7 @@
 .center-wrapper-div {
   display: flex;
   justify-content: space-between;
-  margin: 65px 205px 0px;
+  margin: 65px 305px 15px;
 }
 
 .title {
@@ -42,6 +48,8 @@
   font-size: 35px;
   color: #0e5a5f;
   text-shadow: 0.8px 0.5px #88ced3;
+  text-align: center;
+  padding: 15px 20px 0px;
 }
 
 .subtitle {
@@ -69,12 +77,16 @@ p {
   background-color: #a92fe6;
   padding: 5px 5px 5px 5px;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
   #main-container {
     padding: 25px 10px 10px 25px;
   }
   .intro-wrapper {
     padding: 5px 10px 5px;
+  }
+  .intro-text {
+    padding: 10px 50px 0px;
+    text-align: center;
   }
   .center-wrapper-div {
     margin: 25px 25px 0px;

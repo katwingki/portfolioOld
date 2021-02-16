@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './ContactForm.css';
-import Toastify from 'toastify-js';
 import { db } from './firebase';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+configureAnchors({ offset: -160, scrollDuration: 200 });
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -27,17 +28,6 @@ const ContactForm = () => {
         setMessage('');
         setLoading(false);
         alert('Your message has been submitted');
-        // Toastify({
-        //   text: 'Your message has been submitted!',
-        //   duration: 3000,
-        //   destination: 'https://github.com/apvarun/toastify-js',
-        //   newWindow: true,
-        //   close: true,
-        //   gravity: 'bottom',
-        //   positionLeft: false,
-        //   backgroundColor: 'linear-gradient(to right, #FFA69E, #861657)',
-        //   stopOnFocus: true,
-        // }).showToast();
       } catch (err) {
         alert(err.message);
         setLoading(false);
@@ -45,7 +35,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <>
+    <ScrollableAnchor id={'contact-block'}>
       <div id='form-section'>
         <h3>Send me a message: </h3>
         <div id='main-container-form'>
@@ -83,15 +73,18 @@ const ContactForm = () => {
             </label>
             <button
               type='submit'
-              style={{ background: loading ? '#d3d3d3' : ' rgb(25, 25, 128)' }}
+              style={{
+                background: loading ? '#d3d3d3' : ' rgb(25, 25, 128)',
+              }}
               onClick={handleSubmit}
             >
               Submit
             </button>
+            <p className='website-rights'>Powered by Firebase</p>
           </form>
         </div>
       </div>
-    </>
+    </ScrollableAnchor>
   );
 };
 
