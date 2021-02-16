@@ -45,10 +45,23 @@ function Home() {
           <div className='intro-text'>
             <p>{aboutMe.aboutThree}</p>
           </div>
-          <div className='intro-text'>
-            <p>{aboutMe.keyValue}</p>
-          </div>
 
+          <div className='intro-skills'>
+            <h4 className='subtitle'>Technical Skills</h4>
+            <div>
+              <p>
+                Proficient: JavaScript, Node.js, Express.js, REST API, Git,
+                React, Redux.js, React Native, Expo, HTML, CSS, JQuery,
+                Sequelize.js, OAuth, PostgreSQL, Agile Software Development
+              </p>
+            </div>
+            <div>
+              <p>
+                Knowledgeable: Mocha, Chai, Jasmine, Heroku, Firebase, Cloud
+                Firestore
+              </p>
+            </div>
+          </div>
           <div className='resume-section'>
             <a href='https://docs.google.com/document/d/1ODAmBf55PmVSlXAJr8kEnxrHAtQOEGZiV0-Fk8OUmeA/export?format=pdf&embedded=true'>
               <button className='resume-button'>Download Resume</button>

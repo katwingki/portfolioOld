@@ -11,7 +11,7 @@ import ScrollableAnchor, {
   configureAnchors,
   goToTop,
 } from 'react-scrollable-anchor';
-configureAnchors({ offset: -150, scrollDuration: 200 });
+configureAnchors({ offset: -150, scrollDuration: 1000 });
 goToTop();
 
 function Routers() {

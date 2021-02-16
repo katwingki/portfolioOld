@@ -5,6 +5,7 @@
   /* padding: 60px 10px; */
   /* background: linear-gradient(#89f7fe, #e1f3f7); */
   background: white;
+  height: 100vh;
   width: 100%;
   display: flex;
 }
@@ -19,7 +20,10 @@
   text-align: justify;
   text-indent: 20px;
 }
-
+.intro-skills {
+  padding: 15px 150px 0px;
+  line-height: 1.5;
+}
 .lottie-wrapper {
   display: flex;
   direction: flex-start;
